@@ -1,3 +1,16 @@
+# Project README
+
+- link: https://www.youtube.com/watch?v=0riHps91AzE
+- 23:20: Reference variable in JSX
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
