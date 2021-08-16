@@ -1,9 +1,10 @@
 # Project README
 
 - link: https://www.youtube.com/watch?v=0riHps91AzE
-- 23:20: Reference variable in JSX
+- 39:25: UseEffect hook
 
-
+Note:
+SampleComp.js is written to practice Hooks
 
 
 
