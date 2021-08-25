@@ -1,5 +1,7 @@
 // useEffect: for local storage
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { uuid } from 'uuidv4';
 import './App.css';
 import Header from "./Header";
 import AddContact from "./AddContact";
@@ -13,9 +15,19 @@ function App() {
 
 
   const addContactHandler = (contact) => {
-    console.log("Before add:", contacts);
-    setContacts([...contacts, contact]);
+    // console.log("Before add:", contacts);
+    setContacts([...contacts, { id: uuid(), ...contact }]);
   };
+
+  const removeContactHandler = (id) => {
+    const newContactList = contacts.filter((contact) => {
+      console.log("removeContactHandler~contact:", contact);
+      return contact.id !== id;
+    });
+
+    console.log("newContactList: ", newContactList)
+    setContacts(newContactList);
+  }
 
   const modifySampleHandler = (sample) => {
     console.log("Sample: ", sample)
@@ -37,12 +49,20 @@ function App() {
 
   return (
     <div className="ui container">
-      <Header />
-      <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts} />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={ContactList} />
+          <Route path="/add" component={AddContact} />
 
+        </Switch>
 
-      <SampleComp modifySampleHandler={modifySampleHandler}/>
+        {/* <AddContact addContactHandler={addContactHandler} /> */}
+        {/* <ContactList contacts={contacts} getContactId={removeContactHandler} /> */}
+
+        {/* <SampleComp modifySampleHandler={modifySampleHandler} /> */}
+      </Router>
+
     </div>
   );
 }

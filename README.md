@@ -1,9 +1,16 @@
 # Project README
 
 - link: https://www.youtube.com/watch?v=0riHps91AzE
-- 39:25: UseEffect hook
+- 56:30: React Router
 
-Note:
+### Instructions
+- Install uuidv4 npm pkg (https://www.npmjs.com/package/uuidv4)
+  - $ npm install uuidv4
+- For React Router:
+  - $ npm install react-router-dom --save
+  - After installation, you can see "react-router-dom": "^5.2.0" in package.json
+
+### Author's Notes:
 SampleComp.js is written to practice Hooks
 
 
