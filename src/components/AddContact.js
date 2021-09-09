@@ -18,6 +18,8 @@ class AddContact extends React.Component {
         // Pass props to App.js, then clear the fields
         this.props.addContactHandler(this.state);
         this.setState({ name: "", email: "" });
+        // Progammatically route back to ContactList page
+        this.props.history.push("/");
     }
 
     render() {

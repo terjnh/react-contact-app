@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* SPACER */
+.med-label-1 {
+  margin-left: 0rem; /* 4px */
+  font-size: 20px;
+  color: #05445E;
+}

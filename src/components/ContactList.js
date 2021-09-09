@@ -3,19 +3,14 @@ import { Link } from 'react-router-dom';
 import ContactCard from './ContactCard';
 
 const ContactList = (props) => {
-    // console.log(props);
+    // console.log("ContactList", props);
 
     const deleteContactHandler = (id) => {
+        console.log("deleteContactHandler")
         props.getContactId(id);
     };
 
-    const contacts = [{
-        id: "1",
-        "name": "Dipesh",
-        "email": "cs@gmail.com"
-    }]
-
-    const renderContactList = contacts.map((contact) => {
+    const renderContactList = props.contacts.map((contact) => {
         return (
             <ContactCard
                 contact={contact}
