@@ -1,7 +1,13 @@
 # Project README
+Video link: https://www.youtube.com/watch?v=0riHps91AzE
+Functionality:
+- Add Contact
+- Delete Contact
+- Update/Edit Contact
+- Search (Filter) Contact
+- "Mock" backend sitting on ../server-api/db.json
 
-- link: https://www.youtube.com/watch?v=0riHps91AzE
-- 1:17:00 (Access Route State)
+
 ### Instructions
 - Install uuidv4 npm pkg (https://www.npmjs.com/package/uuidv4)
   - $ npm install uuidv4
@@ -9,11 +15,16 @@
   - $ npm install react-router-dom --save
   - After installation, you can see "react-router-dom": "^5.2.0" in package.json
 
+- server api sits in `contact-app/src/api/contacts.js`
+
+
+
 ### Author's Notes:
 SampleComp.js is written to practice Hooks
 
 
-
+### JSON server:
+https://github.com/typicode/json-server
 
 
 

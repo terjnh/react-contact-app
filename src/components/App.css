@@ -37,10 +37,21 @@
   }
 }
 
-
 /* SPACER */
 .med-label-1 {
   margin-left: 0rem; /* 4px */
   font-size: 20px;
-  color: #05445E;
+  color: #05445e;
+}
+
+.ui-icon-trash {
+  margin: 0;
+  padding: 30px 6px;
+  vertical-align: middle;
+}
+
+.ui-icon-add-contact {
+  margin: 0;
+  padding: 60px 6px;
+  vertical-align: middle;
 }
